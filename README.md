@@ -1,16 +1,71 @@
-# React + Vite
+# Jobs Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a simple Jobs Management System built with React and Mock API. The application allows users to view, add, edit, and delete job listings.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View a list of job postings
+- Add new job postings
+- Edit existing job postings
+- Delete job postings
+- Responsive design for various screen sizes
+- Mock API integration for data handling
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- Mock API (e.g., JSON Server or similar)
+- Tailwind CSS (optional for styling)
+- Axios (for API requests)
+- React Router 7 (for navigation)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+   ```bash
+   git clone
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+    cd jobs-management-system
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+    npm install
+   ```
+
+4. Run the React application:
+
+   ```bash
+    npm run dev
+   ```
+
+5. Set up a mock api at https://mockapi.io/ and update the API endpoint in the code accordingly.
+
+## Usage
+
+- Open your browser and navigate to `http://localhost:5173` to view the application.
+- Use the interface to manage job postings as needed.
+
+## Contributing
+
+- Fork the repository
+- Create a new branch (`git checkout -b feature/YourFeature`)
+- Commit your changes (`git commit -m 'Add some feature'`)
+- Push to the branch (`git push origin feature/YourFeature`)
+- Open a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+Sathish Gnanaprakasam - Creator of the Jobs Management System
