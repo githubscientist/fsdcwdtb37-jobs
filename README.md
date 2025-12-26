@@ -11,6 +11,13 @@ This repository contains a simple Jobs Management System built with React and Mo
 - Responsive design for various screen sizes
 - Mock API integration for data handling
 
+## Setup
+
+1. React application created using Vite.
+2. Initialize it as a git repository and push it to GitHub.
+3. Do a basic cleanup of the default files and structure.
+4. React Router 7 setup for navigation.
+
 ## Technologies Used
 
 - React
