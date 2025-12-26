@@ -17,6 +17,7 @@ This repository contains a simple Jobs Management System built with React and Mo
 2. Initialize it as a git repository and push it to GitHub.
 3. Do a basic cleanup of the default files and structure.
 4. React Router 7 setup for navigation.
+5. Tailwind CSS setup for styling.
 
 ## Technologies Used
 
