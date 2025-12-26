@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 const routes = [
   {
     path: "/",
-    element: <h1>Hello App</h1>
+    element: <h1 className="text-4xl text-left mt-4 ml-4">Hello App</h1>
   }
 ]
 
