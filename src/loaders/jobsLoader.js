@@ -1,7 +1,7 @@
-import instance from '../instances/instance';
+import jobServices from "../services/jobServices";
 
 const jobsLoader = async () => {
-    let response = await instance.get('/jobs');
+    let response = await jobServices.fetchAllJobs();
     return response.data;
 }
 
