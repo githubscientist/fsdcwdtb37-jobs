@@ -21,6 +21,10 @@ const JobDetails = () => {
         }
     }
 
+    const handleEdit = (jobId) => {
+        navigate(`/job/update/${jobId}`);
+    }
+
     return (
         <div className="text-center mt-4 mx-0 p-4">
             <div className="bg-gray-400 shadow-md rounded-lg p-6 text-white">
@@ -29,9 +33,15 @@ const JobDetails = () => {
                 <p className="mb-2">Description: {job.description}</p>
             </div>
 
-            <button className="mt-4 ml-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-                onClick={() => handleDelete(job.id)}
-            >Delete</button>
+            <div>
+                <button className="mt-4 ml-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    onClick={() => handleEdit(job.id)}
+                >Edit</button>
+
+                <button className="mt-4 ml-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                    onClick={() => handleDelete(job.id)}
+                >Delete</button>
+            </div>
         </div>
     )
 }
