@@ -1,21 +1,9 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
 
     // create a state to handle the api data
-    const [jobs, setJobs] = useState([]);
-
-    // it will run only once immediately after the component is rendered
-    useEffect(() => {
-        // make the api call
-        // asynchronous or synchronous
-        axios
-            .get('https://694e9adbb5bc648a93c0d760.mockapi.io/jobs')
-            .then((response) => {
-                setJobs(response.data);
-            })
-    }, []);
+    const jobs = useLoaderData();
 
     console.log(jobs); // printed or processed twice 
     // 1. when the component first is mounted - jobs = []
