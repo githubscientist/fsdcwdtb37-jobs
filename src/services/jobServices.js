@@ -18,6 +18,11 @@ const jobServices = {
     createJob: async (data) => {
         const response = await instance.post('/jobs', data);
         return response;
+    },
+
+    updateJob: async (jobId, data) => {
+        const response = await instance.put(`/jobs/${jobId}`, data);
+        return response;
     }
 }
 
