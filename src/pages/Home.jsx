@@ -1,16 +1,21 @@
 import { useLoaderData } from "react-router";
+import Job from "./Job";
 
 const Home = () => {
-
-    // create a state to handle the api data
     const jobs = useLoaderData();
 
-    console.log(jobs); // printed or processed twice 
-    // 1. when the component first is mounted - jobs = []
-    // 2. after the component is mounted, useEffect() runs once. we are making an api call -> getting a response data -> set the data to the jobs state -> state changes -> triggers component re-rendering -> jobs state gets printed for the second time
-
     return (
-        <h1 className="text-4xl text-left mt-4 ml-4">Home Page</h1>
+        <>
+            <h1 className="text-4xl p-4 mt-4">All Jobs</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mx-0 px-4">
+                {
+                    jobs.map((job) => <Job
+                        key={job.id}
+                        job={job}
+                    />)
+                }
+            </div>
+        </>
     )
 }
 
