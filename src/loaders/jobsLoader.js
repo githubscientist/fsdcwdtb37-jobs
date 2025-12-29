@@ -1,7 +1,7 @@
-import axios from "axios";
+import instance from '../instances/instance';
 
 const jobsLoader = async () => {
-    let response = await axios.get('https://694e9adbb5bc648a93c0d760.mockapi.io/jobs');
+    let response = await instance.get('/jobs');
     return response.data;
 }
 
