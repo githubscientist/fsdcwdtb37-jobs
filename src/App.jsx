@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./pages/Home";
+import CreateJob from './pages/CreateJob';
 import jobsLoader from "./loaders/jobsLoader";
 import JobDetails from "./pages/JobDetails";
 import jobLoader from "./loaders/jobLoader";
@@ -17,6 +18,10 @@ const routes = [
     element: <JobDetails />,
     loader: jobLoader,
     hydrateFallbackElement: <p>Loading...</p>
+  },
+  {
+    path: "/job/create",
+    element: <CreateJob />
   }
 ]
 
