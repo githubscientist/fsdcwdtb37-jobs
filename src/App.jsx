@@ -1,11 +1,22 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./pages/Home";
+import jobsLoader from "./loaders/jobsLoader";
+import JobDetails from "./pages/JobDetails";
+import jobLoader from "./loaders/jobLoader";
 
 // define the routes
 const routes = [
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
+    loader: jobsLoader,
+    hydrateFallbackElement: <p>Loading...</p>
+  },
+  {
+    path: "/jobs/:jobId",
+    element: <JobDetails />,
+    loader: jobLoader,
+    hydrateFallbackElement: <p>Loading...</p>
   }
 ]
 
