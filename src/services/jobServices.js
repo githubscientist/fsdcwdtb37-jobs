@@ -13,6 +13,11 @@ const jobServices = {
 
     deleteJobByID: async (jobId) => {
         await instance.delete(`/jobs/${jobId}`);
+    },
+
+    createJob: async (data) => {
+        const response = await instance.post('/jobs', data);
+        return response;
     }
 }
 

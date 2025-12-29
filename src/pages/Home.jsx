@@ -1,8 +1,9 @@
-import { useLoaderData } from "react-router";
+import { useLoaderData, useNavigate } from "react-router";
 import Job from "./Job";
 
 const Home = () => {
     const jobs = useLoaderData();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -15,6 +16,9 @@ const Home = () => {
                     />)
                 }
             </div>
+            <button className="border rounded p-2 mt-4 ml-4 bg-blue-400 text-white hover:bg-blue-600"
+                onClick={() => navigate('/job/create')}
+            >Create New Job</button>
         </>
     )
 }
